@@ -7,32 +7,28 @@ public class MoveManager : MonoBehaviour
 
     [SerializeField]
     private float speedFactor;
-    
-    void Update()
+
+    private void Update()
     {
-        var moveDirection = new Vector3();
-        if (Input.GetKey(KeyCode.W))
-        {
-            moveDirection += Vector3.forward;
-        }
-        else if(Input.GetKey(KeyCode.A))
-        {
-            moveDirection += Vector3.left;
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            moveDirection += Vector3.back;
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            moveDirection += Vector3.right;
-        }
-        else
-        {
-            return;
-        }
+        // Legacy InputSystem - Input Manager
+        // 복잡한 설정이나 긴 코드없이 간단하게 설정이 가능하나 polling으로 구현해야한다는 단점.
+        // 향후 제거될 예정.
         
+        // GetAxis
+        // -1 ~ 1의 값의 변경에 보간이 들어감.
+        var h = Input.GetAxis("Horizontal");
+        var v = Input.GetAxis("Vertical");
+        
+        // GetAxisRaw
+        // -1, 0, 1의 분리된 값을 반환함.
+        // var h = Input.GetAxisRaw("Horizontal");
+        // var v = Input.GetAxisRaw("Vertical");
+        
+        var moveDirection = new Vector3(h, 0, v);
         moveDirection.Normalize();
-        charaObject.transform.position += moveDirection * (Time.deltaTime * speedFactor);
+
+        var charaTf = charaObject.transform;
+        charaTf.position += moveDirection * (Time.deltaTime * speedFactor);
+        charaTf.LookAt(charaTf.position + moveDirection);
     }   
 }
