@@ -18,8 +18,6 @@ namespace Pinball
         {
             ballRb.linearVelocity = Vector3.zero;
             ballRb.position = ballSpawnPOsition;
-        
-            Debug.Log(ballRb.position);
         }
     }
 }

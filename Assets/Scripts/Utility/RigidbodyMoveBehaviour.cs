@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Utility
 {
-    public class RigidbodyMoveManager : MonoBehaviour
+    public class RigidbodyMoveBehaviour : MonoBehaviour
     {
         [SerializeField]
         private float moveSpeed;

@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Turret
 {
-    public class BulletManager : MonoBehaviour
+    public class Bullet : MonoBehaviour
     {
         [SerializeField]
         private float bulletSpeed = 20f;

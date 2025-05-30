@@ -1,9 +1,8 @@
-using System;
 using UnityEngine;
 
 namespace Door
 {
-    public class DoorManager : MonoBehaviour
+    public class Door : MonoBehaviour
     { 
         private static readonly int openHash = Animator.StringToHash("Open");
         private static readonly int openSpeedHash = Animator.StringToHash("OpenSpeed");

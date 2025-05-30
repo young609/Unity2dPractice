@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 817e92b865a334e96a13692d1260bff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rouletteManager: {fileID: 1011065871}
+  roulette: {fileID: 1011065871}
   rouletteButton: {fileID: 371802451}
 --- !u!1 &422825499
 GameObject:

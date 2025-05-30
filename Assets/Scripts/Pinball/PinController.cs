@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Pinball
 {
-    public class PinManager : MonoBehaviour
+    public class PinController : MonoBehaviour
     {
         [SerializeField]
         private Rigidbody2D leftBarRb;

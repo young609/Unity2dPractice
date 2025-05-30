@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Roulette
 {
-    public class RouletteManager : MonoBehaviour
+    public class Roulette : MonoBehaviour
     {
         [SerializeField]
         private Transform roulettePageTf;

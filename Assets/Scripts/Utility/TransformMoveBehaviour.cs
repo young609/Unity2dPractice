@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Utility
 {
-    public class TransformMoveManager : MonoBehaviour
+    public class TransformMoveBehaviour : MonoBehaviour
     {
         [SerializeField]
         private float moveSpeed;

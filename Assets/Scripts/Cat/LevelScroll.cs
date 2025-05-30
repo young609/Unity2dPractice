@@ -1,9 +1,8 @@
-using System;
 using UnityEngine;
 
 namespace Cat
 {
-    public class LevelScrollManager : MonoBehaviour
+    public class LevelScroll : MonoBehaviour
     {
         [SerializeField]
         private CatController catController;

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Roulette
@@ -6,7 +7,7 @@ namespace Roulette
     public class RouletteStartButton : MonoBehaviour
     {
         [SerializeField]
-        private RouletteManager rouletteManager;
+        private Roulette roulette;
     
         [SerializeField]
         private Button rouletteButton;
@@ -15,7 +16,7 @@ namespace Roulette
         {
             rouletteButton.onClick.AddListener(() =>
             {
-                rouletteManager.StartRoulette();
+                roulette.StartRoulette();
             });
         }
     }

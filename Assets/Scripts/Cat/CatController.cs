@@ -8,10 +8,10 @@ namespace Cat
         public event Action<float> OnMove;
         
         [SerializeField]
-        private float moveSpeed = 5;
+        private float moveSpeed = 5f;
         
         [SerializeField]
-        private float jumpForce = 10;
+        private float jumpForce = 10f;
         
         [SerializeField]
         private bool isGrounded = true;

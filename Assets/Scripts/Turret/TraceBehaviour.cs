@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Turret
 {
-    public class TraceManager : MonoBehaviour
+    public class TraceBehaviour : MonoBehaviour
     {
         [SerializeField]
         private GameObject traceObject;
